@@ -39,6 +39,6 @@ function App() {
 
 export default App;
 ```
-<blockquote class="imgur-embed-pub" lang="en" data-id="RaxxVdp"><a href="//imgur.com/RaxxVdp">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+![](https://imgur.com/RaxxVdp)
 
 Thanks
