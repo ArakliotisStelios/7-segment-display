@@ -42,6 +42,7 @@ export default App;
 ![](https://i.imgur.com/Q6gTdPd.png)
 
 **Notes**
+
 The component can only display 1 digit number (0 ~ 9).
 Anything else will display an invalid indicator ( G segment ).
 To-Do: A multiple digits component
