@@ -39,6 +39,6 @@ function App() {
 
 export default App;
 ```
-![](https://imgur.com/RaxxVdp)
+![](https://i.imgur.com/RaxxVdp.png)
 
 Thanks
