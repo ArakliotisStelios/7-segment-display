@@ -1,17 +1,18 @@
 {
   "name": "7-segment-display",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "7 segment display component for react",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-      "build": "./node_modules/.bin/babel src --out-file index.js"
+    "build": "./node_modules/.bin/babel src --out-file index.js"
   },
   "author": "Stelios Arakliotis",
   "license": "ISC",
   "peerDependencies": {
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+      "prop-types": "^15.7.2"
   },
   "devDependencies": {
     "@babel/cli": "^7.10.5",
@@ -19,6 +20,9 @@
     "@babel/preset-env": "^7.11.0",
     "@babel/preset-react": "^7.10.4",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "prop-types": "^15.7.2"
+  },
+  "dependencies": {
   }
 }
