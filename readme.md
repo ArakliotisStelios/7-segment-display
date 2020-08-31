@@ -22,7 +22,7 @@ yarn add 7-segment-display
 
 **Example**
 
-```
+```js
 import React from 'react';
 import SevenSegmentDisplay from "7-segment-display"
 
