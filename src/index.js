@@ -33,7 +33,7 @@ const SevenSegmentDisplay = ({number,style})=>{
     }
     useEffect(() => {
         refreshSegments()
-        number ? calculateLeds(number): calculateLeds("invalid")
+        number > -1 ? calculateLeds(number): calculateLeds("invalid")
     }, [number]);
 
     return (
