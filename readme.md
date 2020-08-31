@@ -20,6 +20,8 @@ npm install 7-segment-display --save
 yarn add 7-segment-display
 ```
 
+[**Playground**](https://codesandbox.io/s/nice-satoshi-zto7w?file=/src/App.js:313-318)
+
 **Example**
 
 ```js
@@ -41,4 +43,10 @@ export default App;
 ```
 ![](https://i.imgur.com/Q6gTdPd.png)
 
-Thanks
+**Notes**
+
+The component can only display 1 digit number (0 ~ 9).
+Anything else will display an invalid indicator ( G segment ).
+To-Do: A multiple digits component
+
+Thanks :D
