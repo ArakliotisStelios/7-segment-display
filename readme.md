@@ -20,7 +20,7 @@ npm install 7-segment-display --save
 yarn add 7-segment-display
 ```
 
-[**Payground**](https://codesandbox.io/s/nice-satoshi-zto7w?file=/src/App.js:313-318)
+[**Playground**](https://codesandbox.io/s/nice-satoshi-zto7w?file=/src/App.js:313-318)
 
 **Example**
 
