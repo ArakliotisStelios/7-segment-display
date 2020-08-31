@@ -19,7 +19,10 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 var SevenSegmentDisplay = function SevenSegmentDisplay(_ref) {
   var number = _ref.number,
-      style = _ref.style;
+      style = _ref.style,
+      ledColorOff = _ref.ledColorOff,
+      ledColorOn = _ref.ledColorOn,
+      ledBorder = _ref.ledBorder;
   var sevenSegmentObj = {
     "0": ["a", "b", "c", "d", "e", "f"],
     "1": ["b", "c"],
@@ -33,14 +36,13 @@ var SevenSegmentDisplay = function SevenSegmentDisplay(_ref) {
     "9": ["a", "b", "c", "d", "f", "g"],
     "invalid": ["g"]
   };
-  var ledColor = "transparent";
   var elementsRef = (0, _react.useRef)(sevenSegmentObj[8].map(function () {
     return /*#__PURE__*/(0, _react.createRef)();
   }));
 
   var refreshSegments = function refreshSegments() {
     elementsRef.current.forEach(function (polygon) {
-      polygon.current.style.fill = ledColor;
+      polygon.current.style.fill = ledColorOff;
     });
   };
 
@@ -50,7 +52,7 @@ var SevenSegmentDisplay = function SevenSegmentDisplay(_ref) {
     }).forEach(function (letter) {
       elementsRef.current.forEach(function (polygon) {
         if (polygon.current.id === letter) {
-          polygon.current.style.fill = "red";
+          polygon.current.style.fill = ledColorOn;
         }
       });
     });
@@ -70,7 +72,7 @@ var SevenSegmentDisplay = function SevenSegmentDisplay(_ref) {
     id: "abcdefg",
     style: {
       fillRule: 'evenodd',
-      stroke: "black",
+      stroke: "".concat(ledBorder),
       strokeWidth: "0.25",
       strokeOpacity: "1",
       strokeLinecap: "butt",
@@ -80,45 +82,51 @@ var SevenSegmentDisplay = function SevenSegmentDisplay(_ref) {
     ref: elementsRef.current[0],
     id: "a",
     points: " 1, 1  2, 0  8, 0  9, 1  8, 2  2, 2",
-    fill: ledColor
+    fill: ledColorOff
   }), /*#__PURE__*/_react["default"].createElement("polygon", {
     ref: elementsRef.current[1],
     id: "b",
     points: " 9, 1 10, 2 10, 8  9, 9  8, 8  8, 2",
-    fill: ledColor
+    fill: ledColorOff
   }), /*#__PURE__*/_react["default"].createElement("polygon", {
     ref: elementsRef.current[2],
     id: "c",
     points: " 9, 9 10,10 10,16  9,17  8,16  8,10",
-    fill: ledColor
+    fill: ledColorOff
   }), /*#__PURE__*/_react["default"].createElement("polygon", {
     ref: elementsRef.current[3],
     id: "d",
     points: " 9,17  8,18  2,18  1,17  2,16  8,16",
-    fill: ledColor
+    fill: ledColorOff
   }), /*#__PURE__*/_react["default"].createElement("polygon", {
     ref: elementsRef.current[4],
     id: "e",
     points: " 1,17  0,16  0,10  1, 9  2,10  2,16",
-    fill: ledColor
+    fill: ledColorOff
   }), /*#__PURE__*/_react["default"].createElement("polygon", {
     ref: elementsRef.current[5],
     id: "f",
     points: " 1, 9  0, 8  0, 2  1, 1  2, 2  2, 8",
-    fill: ledColor
+    fill: ledColorOff
   }), /*#__PURE__*/_react["default"].createElement("polygon", {
     ref: elementsRef.current[6],
     id: "g",
     points: " 1, 9  2, 8  8, 8  9, 9  8,10  2,10",
-    fill: ledColor
+    fill: ledColorOff
   })));
 };
 
 SevenSegmentDisplay.defaultProps = {
-  number: 0
+  number: 0,
+  ledColorOff: "transparent",
+  ledColorOn: "red",
+  ledBorder: "black"
 };
 SevenSegmentDisplay.propTypes = {
-  number: _propTypes["default"].number
+  number: _propTypes["default"].number,
+  ledColorOff: _propTypes["default"].string,
+  ledColorOn: _propTypes["default"].string,
+  ledBorder: _propTypes["default"].string
 };
 var _default = SevenSegmentDisplay;
 exports["default"] = _default;
