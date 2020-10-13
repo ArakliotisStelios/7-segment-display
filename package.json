@@ -1,12 +1,17 @@
 {
   "name": "7-segment-display",
-  "version": "1.0.8",
+  "version": "1.1.2",
   "description": "7 segment display component for react",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "./node_modules/.bin/babel src --out-file index.js"
   },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ArakliotisStelios/7-segment-display"
+    },
+    "keywords": ["seven","segment","display","7digit","react","led","component","digital","clock","number"],
   "author": "Stelios Arakliotis",
   "license": "ISC",
   "peerDependencies": {

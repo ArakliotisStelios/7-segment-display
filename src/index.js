@@ -68,14 +68,17 @@ const SevenSegmentDisplay = ({ character, style, ledColorOff, ledColorOn, ledBor
 };
 
 SevenSegmentDisplay.defaultProps = {
-    number: 0,
+    character: 0,
     ledColorOff: "transparent",
     ledColorOn: "red",
     ledBorder: "black",
 };
 
 SevenSegmentDisplay.propTypes = {
-    number: PropTypes.number,
+    character: PropTypes.oneOfType([
+        PropTypes.string,
+        PropTypes.number
+    ]),
     ledColorOff: PropTypes.string,
     ledColorOn: PropTypes.string,
     ledBorder: PropTypes.string,

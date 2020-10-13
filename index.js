@@ -80,13 +80,13 @@ var SevenSegmentDisplay = function SevenSegmentDisplay(_ref) {
 };
 
 SevenSegmentDisplay.defaultProps = {
-  number: 0,
+  character: 0,
   ledColorOff: "transparent",
   ledColorOn: "red",
   ledBorder: "black"
 };
 SevenSegmentDisplay.propTypes = {
-  number: _propTypes["default"].number,
+  character: _propTypes["default"].oneOfType([_propTypes["default"].string, _propTypes["default"].number]),
   ledColorOff: _propTypes["default"].string,
   ledColorOn: _propTypes["default"].string,
   ledBorder: _propTypes["default"].string
