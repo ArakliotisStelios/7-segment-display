@@ -32,9 +32,9 @@ function App() {
 
   return (
     <div className="App">
-        <SevenSegmentDisplay character={3}></SevenSegmentDisplay>
-        <SevenSegmentDisplay ledColorOn={"green"} character={7}></SevenSegmentDisplay>
-        <SevenSegmentDisplay ledBorder={"transparent"} ledColorOn={"black"} ledColorOff={"black"} character={3}></SevenSegmentDisplay>
+        <SevenSegmentDisplay number={3}></SevenSegmentDisplay>
+        <SevenSegmentDisplay ledColorOn={"green"} number={7}></SevenSegmentDisplay>
+        <SevenSegmentDisplay ledBorder={"transparent"} ledColorOn={"black"} ledColorOff={"black"} number={3}></SevenSegmentDisplay>
     </div>
   );
 }
